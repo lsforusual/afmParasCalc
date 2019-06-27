@@ -1,0 +1,26 @@
+#mainPanel{
+    width: 50%;
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-right: 10px;
+    max-width: 200px;
+}
+body{
+
+}
+label{
+    width:35%;
+    height: 30px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: center;
+
+}
+li>input{
+    width: 50%;
+    height: 24px;
+}

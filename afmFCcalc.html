@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AFM Force Constant Calculation</title>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+    <link href="css/uikit.gradient.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <nav class="uk-nav-navbar uk-nav-header">
+            <a href="" class="uk-navbar-brand">阿卡林</a>
+
+        </nav>
+
+        <div id="mainPanel" class="uk-panel uk-panel-box uk-container-center uk-text-center">
+            <h1 id="panelTitle">AFM力常数计算</h1>
+            <ul id="calc" class="uk-grid uk-grid-small uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
+                <li >
+                    <label for="width" >Width:</label>
+                    <input id="width" value="12" />
+                </li>
+                <li >
+                    <label for="height">Height:</label>
+                    <input id="height" value="12" />
+                </li >
+                <li>
+                    <label for="length">Length:</label>
+                    <input id="length" value="12" />
+                </li>
+                <li>
+                    <label for="thickness">Thickness:</label>
+                    <input id="thickness" value="12" />
+                </li>
+            </ul>
+            <input id="submit" type="button" value="Shoot it!" class="uk-button uk-width-1-1"/>
+
+        <h3 class="uk-text-left">Result:</h3>
+            <dl id="result" class="uk-grid uk-grid-small uk-grid-width-medium-1-2 uk-grid-width-small-1-1 uk-text-left">
+                <dt>f_normal(kHz) </dt>  <dd id="fcnormal"></dd>
+                <dt>f_correct </dt>  <dd id="freqcorrect"></dd>
+                <dt>fcnormal</dt>  <dd id="fcnormal"></dd>
+                <dt>fclateral </dt> <dd id="fclateral"></dd>
+                <dt>fctorrision </dt> <dd id="fctorrision"></dd>
+            </dl>
+        </div>
+
+    </div>
+
+</body>
+</html>
