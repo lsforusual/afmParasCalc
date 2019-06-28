@@ -11,15 +11,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="afmParasCalc" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/afmFCcalc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="348">
+              <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
               <folding>
-                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#2613#2619#0" expanded="true" />
+                <element signature="e#2775#2781#0" expanded="true" />
+                <element signature="e#2940#2946#0" expanded="true" />
+                <element signature="e#3111#3117#0" expanded="true" />
+                <element signature="e#3442#3448#0" expanded="true" />
+                <element signature="e#3606#3612#0" expanded="true" />
+                <element signature="e#3694#3700#0" expanded="true" />
+                <element signature="e#3777#3783#0" expanded="true" />
+                <element signature="e#3860#3866#0" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,54 +48,68 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/functions.js" />
         <option value="$PROJECT_DIR$/my.css" />
+        <option value="$PROJECT_DIR$/js/functions.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/afmFCcalc.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="800" />
-    <option name="height" value="875" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="afmfc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afmfc" type="462c0819:PsiDirectoryNode" />
+              <item name="afmParasCalc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afmParasCalc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="afmfc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afmfc" type="462c0819:PsiDirectoryNode" />
+              <item name="afmParasCalc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afmParasCalc" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="afmfc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afmfc" type="462c0819:PsiDirectoryNode" />
+              <item name="afmParasCalc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afmParasCalc" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="afmParasCalc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afmParasCalc" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -121,11 +147,12 @@
       <workItem from="1561490800020" duration="343000" />
       <workItem from="1561493455058" duration="2978000" />
       <workItem from="1561646131241" duration="9528000" />
+      <workItem from="1561700256149" duration="11051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12945000" />
+    <option name="totallyTimeSpent" value="23996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -137,11 +164,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1602" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.61714286" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.3325893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50183153" side_tool="true" weight="0.3325893" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -150,9 +177,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32988358" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4990476" visible="true" weight="0.20081411" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50095236" side_tool="true" visible="true" weight="0.20081411" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49925596" visible="true" weight="0.32905295" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4985119" weight="0.19932999" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.32905295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -162,26 +189,36 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my.css">
+    <entry file="file://$PROJECT_DIR$/my.css" />
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="291">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="38">
+          <caret line="2" column="24" lean-forward="true" selection-end-line="2" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/afmFCcalc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="348">
+          <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
           <folding>
-            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2613#2619#0" expanded="true" />
+            <element signature="e#2775#2781#0" expanded="true" />
+            <element signature="e#2940#2946#0" expanded="true" />
+            <element signature="e#3111#3117#0" expanded="true" />
+            <element signature="e#3442#3448#0" expanded="true" />
+            <element signature="e#3606#3612#0" expanded="true" />
+            <element signature="e#3694#3700#0" expanded="true" />
+            <element signature="e#3777#3783#0" expanded="true" />
+            <element signature="e#3860#3866#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

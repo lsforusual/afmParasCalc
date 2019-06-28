@@ -6,49 +6,130 @@
     <script type="text/javascript" src="js/functions.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/uikit.min.js"></script>
-    <link href="css/uikit.gradient.min.css" rel="stylesheet">
+    <link href="css/uikit.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+        function calc() {
+            _W = document.getElementById("width").value;
+            _L = document.getElementById("length").value;
+            _H = document.getElementById("height").value;
+            _T = document.getElementById("thickness").value;
+
+            document.getElementById("FreqNTM").innerText=frequenceNoTipMass().toFixed(2);
+            document.getElementById("FreqWTM").innerText=frequenceWithTipMass().toFixed(2);
+            document.getElementById("nFC").innerText=normalForceConstant().toFixed(2);
+            document.getElementById("lFC").innerText=lateralForceConstant().toFixed(2);
+            document.getElementById("tFC").innerText=torsionalForceConstant().toFixed(2);
+
+        }
+
+    </script>
+
+
+
+
 </head>
 <body>
     <div id="container">
-        <nav class="uk-nav-navbar uk-nav-header">
-            <a href="" class="uk-navbar-brand">阿卡林</a>
+        <!--- Nav start ---->
+        <nav class="uk-navbar uk-navbar-attached uk-navbar">
+            <!--- Left side ---->
+            <div class="uk-navbar-nav">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="" class="uk-navbar-brand" >
+                            <img src="img/head.png" alt="阿卡林" width="32px" height="32px"> </a>
+                    </li>
+                    <li class=""><a href="#Intro">简介</a></li>
+                    <li><a href="#Ref">参考文献</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!--- Right --->
+            <div class="uk-navbar-flip">
+                <ul id="chAndEng" class=" uk-navbar-flip uk-subnav uk-subnav-line">
+                    <li > <a href="" >ENG</a></li>
+                    <li class=" uk-active"><a href="" >中</a></li>
+                </ul>
+            </div>
 
         </nav>
+        <!--- Nav End ---->
 
+        <!--- Calc Part ---->
         <div id="mainPanel" class="uk-panel uk-panel-box uk-container-center uk-text-center">
-            <h1 id="panelTitle">AFM力常数计算</h1>
+            <h1 id="panelTitle">AFM 力常数估算<sup><a href="#Ref">[Ref]</a></sup></h1>
             <ul id="calc" class="uk-grid uk-grid-small uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
                 <li >
-                    <label for="width" >Width:</label>
-                    <input id="width" value="12" />
+                    <label for="width" >悬臂宽度  (um):&nbsp;</label>
+                    <input id="width" value="4" />
                 </li>
                 <li >
-                    <label for="height">Height:</label>
-                    <input id="height" value="12" />
+                    <label for="height">针尖高度 (um):&nbsp;</label>
+                    <input id="height" value="17" />
                 </li >
                 <li>
-                    <label for="length">Length:</label>
-                    <input id="length" value="12" />
+                    <label for="length">悬臂长度  (um):&nbsp;</label>
+                    <input id="length" value="125" />
                 </li>
                 <li>
-                    <label for="thickness">Thickness:</label>
-                    <input id="thickness" value="12" />
+                    <label for="thickness">悬臂厚度  (um):&nbsp;</label>
+                    <input id="thickness" value="4" />
                 </li>
             </ul>
-            <input id="submit" type="button" value="Shoot it!" class="uk-button uk-width-1-1"/>
+            <input id="submit" type="button" value="计算！" class="uk-button uk-width-1-1" onclick="calc()"/>
 
-        <h3 class="uk-text-left">Result:</h3>
-            <dl id="result" class="uk-grid uk-grid-small uk-grid-width-medium-1-2 uk-grid-width-small-1-1 uk-text-left">
-                <dt>f_normal(kHz) </dt>  <dd id="fcnormal"></dd>
-                <dt>f_correct </dt>  <dd id="freqcorrect"></dd>
-                <dt>fcnormal</dt>  <dd id="fcnormal"></dd>
-                <dt>fclateral </dt> <dd id="fclateral"></dd>
-                <dt>fctorrision </dt> <dd id="fctorrision"></dd>
+            <h3 class="uk-text-left">结果与说明:</h3>
+
+            <dl id="result" class="uk-grid uk-grid-collapse uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
+                    <dt>共振频率 f<sub>normal</sub>  (kHz): &nbsp;</dt><dd id="FreqNTM">0</dd>
+                    <dt>矫正共振频率 f<sub>correct</sub> (kHz): &nbsp;</dt>  <dd id="FreqWTM">0</dd>
+                    <dt>力常数 k<sub>normal</sub>  (N/m): &nbsp;</dt> <dd id="nFC">0</dd>
+                    <dt>扭转力常数 k<sub>torsion</sub> (N/m): &nbsp;</dt> <dd id="tFC">0</dd>
+                    <dt>侧向力常数 k<sub>lateral</sub> (N/m): &nbsp;</dt> <dd id="lFC">0</dd>
             </dl>
+
+            <p class="uk-text-left">
+            本计算中使用Si的杨氏模量为：<br>
+            const rho_silicon = 2330; <br>
+            //kg/m3,  density of silicon <br>
+            const E_silicon = 1.69E11; <br>
+            //N/m2, modulus of elasticity / Young’s modulus in the <110> direction of silicon<br>
+            const G_silicon = 0.5E11;<br>
+            //N/m2, modulus of rigidity / modulus of elasticity in shear of silicon<br>
+        </p>
+        </div>
+
+        <div id="Intro" class="uk-panel-body uk-margin-large">
+            <h2>AFM探针的共振频率与力常数：</h2>
+            <p>
+                <img src="img/resonance-frequency-afm-cantilever.png" style="margin:auto,0"></sup>
+
+            </p>
+
+        </div>
+
+        <div id="Ref" class="uk-panel-body" >
+            <h2>参考文献：</h2>
+            <p><a href="https://www.nanoandmore.com/more-about-afm-cantilevers" target="_blank">[1]：NanoAndMore网站</a>
+                <br />
+                [2]：Formulas are derived from “Roark’s Formulas for Stress and Strain”, 6th edition, Waren C. Young, McGraw Hill.
+            </p>
+
         </div>
 
     </div>
+
+
+
+<footer  class="uk-block-default uk-text-center">
+
+        <p>
+        This page is hosted by: <a href="http://jonahliu.cf/cv" target="_blank">JonahLiu</a>
+        </p>
+
+
+</footer>
 
 </body>
 </html>

@@ -9,10 +9,7 @@ var _L = 125; //um, AFM cantilever length
 var _H = 17; //um, AFM tip height
 var _T = 4 ;//um, thickness
 
-function f(a,b) {
-	return a+b;
 
-}
 function normalForceConstant() {
 
 // ref: https://www.nanoandmore.com/more-about-afm-cantilevers

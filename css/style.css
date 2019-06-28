@@ -1,19 +1,24 @@
 #mainPanel{
     width: 50%;
     max-width: 400px;
-    margin-top: 50px;
+    margin-top: 3%;
 }
 
 #submit{
     margin-top: 10px;
     margin-right: 10px;
-    max-width: 200px;
+    max-width: 300px;
 }
-body{
-
+dl>dd{
+    text-align: center;
+    width: 20%;
+}
+dl>dt{
+    text-align: center;
+    width: 60%;
 }
 label{
-    width:35%;
+    width:55%;
     height: 30px;
     display: inline-block;
     text-align: right;
@@ -21,6 +26,17 @@ label{
 
 }
 li>input{
-    width: 50%;
+    width: 40%;
     height: 24px;
+}
+div>p{
+    padding-left: 7%;
+}
+
+#chAndEng{
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.uk-panel-body{
+    padding-left: 5%;
 }
