@@ -10,11 +10,12 @@
     max-width: 300px;
 }
 dl>dd{
-    text-align: center;
+    padding-left: 10%;
+    text-align: left;
     width: 20%;
 }
 dl>dt{
-    text-align: center;
+    text-align: right;
     width: 60%;
 }
 label{
