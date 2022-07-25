@@ -1,3 +1,10 @@
+/*
+ * @Author: Jonah Liu
+ * @Date: 2022-07-25 17:02:32
+ * @LastEditTime: 2022-07-25 17:06:04
+ * @LastEditors: Jonah Liu
+ * @Description: 
+ */
 const rho_silicon = 2330; //kg/m3,  density of silicon
 const E_silicon = 1.69E11; //N/m2, modulus of elasticity / Young’s modulus in the <110> direction of silicon
 const G_silicon = 0.5E11; //N/m2, modulus of rigidity / modulus of elasticity in shear of silicon
@@ -9,6 +16,19 @@ var _L = 125; //um, AFM cantilever length
 var _H = 17; //um, AFM tip height
 var _T = 4 ;//um, thickness
 
+function calc() {
+	_W = document.getElementById("width").value;
+	_L = document.getElementById("length").value;
+	_H = document.getElementById("height").value;
+	_T = document.getElementById("thickness").value;
+
+	document.getElementById("FreqNTM").innerText=frequenceNoTipMass().toFixed(2);
+	document.getElementById("FreqWTM").innerText=frequenceWithTipMass().toFixed(2);
+	document.getElementById("nFC").innerText=normalForceConstant().toFixed(2);
+	document.getElementById("lFC").innerText=lateralForceConstant().toFixed(2);
+	document.getElementById("tFC").innerText=torsionalForceConstant().toFixed(2);
+
+}
 
 function normalForceConstant() {
 
